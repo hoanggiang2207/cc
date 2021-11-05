@@ -1,46 +1,50 @@
-<!DOCTYPE html> 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pick a card</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <div class="content">
-        <h2>01</h2>
-        <h3>Card One</h3>
-        <p>Hey girl</p>
-        <a href="#">Read more</a>       
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <h2>02</h2>
-        <h3>Card Two</h3>
-        <p>Hey boy</p>
-        <a href="#">Read more</a>       
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <h2>03</h2>
-        <h3>Card Three</h3>
-        <p>Hey LGBT</p>
-        <a href="#">Read more</a>       
-      </div>
-    </div>
-  </div>
-  
-  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
-		speed: 400,
-    glare: true,
-    "max-glare": 1,
-	});
-  </script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something noname</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Arcane_Title_Text.png"></a>
+        <div class="toggle"><img src="toggle.png"></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Riot <span>and</span> Netflix</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li>
+                    <a href="#"><img src="facebook.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="twitter.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="instagram.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="trailer.mp4.webm" controls="true"></video>
+        <img src="close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>
