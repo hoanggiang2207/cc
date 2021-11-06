@@ -1,0 +1,12 @@
+.navbar ul li{
+    font-size: 0.7rem;
+}
+.box{
+    width: 350px;
+    height: 210px;
+    padding: 0px;
+    text-align: center;
+}
+#about{
+    padding: 10px;
+}

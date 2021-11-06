@@ -1,0 +1,15 @@
+.box{
+    width: 600px;
+    height: 180px;
+    padding: 0px;
+    text-align: center;
+}
+.headings{
+    font-size: 2.0rem;
+}
+.box p{
+    font-size: 1.1rem;
+}
+#about{
+    padding: 50px;
+}

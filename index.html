@@ -1,46 +1,85 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pick a card</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width:1100px)" href="bigtablet.css">
+    <link rel="stylesheet" media="screen and (max-width:960px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:850px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:780px)" href="smallthanphone.css">
+    <link rel="stylesheet" media="screen and (max-width:635px)" href="smallerthanphone.css">
+    <link rel="stylesheet" media="screen and (max-width:520px)" href="smalllthanphone.css">
+    <link rel="stylesheet" media="screen and (max-width:450px)" href="smallllthanphone.css">
+    <link rel="stylesheet" media="screen and (max-width:370px)" href="smalllllthanphone.css">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="content">
-        <h2>01</h2>
-        <h3>Card One</h3>
-        <p>Hey girl</p>
-        <a href="#">Read more</a>       
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <h2>02</h2>
-        <h3>Card Two</h3>
-        <p>Hey boy</p>
-        <a href="#">Read more</a>       
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <h2>03</h2>
-        <h3>Card Three</h3>
-        <p>Hey LGBT</p>
-        <a href="#">Read more</a>       
-      </div>
-    </div>
-  </div>
-  
-  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
-		speed: 400,
-    glare: true,
-    "max-glare": 1,
-	});
-  </script>
-</body>
-</html>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li> 
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contacts">Contact Me</a></li>
+        </ul>
+    </nav>
 
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM <br> HOANG GIANG</h1>
+            <button class="btn">
+                Hire me
+            </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">
+            <img src="Midtermbgr.jpg" alt="">
+            <div id="intro">
+                <h2> HOANG GIANG</h2>
+                <p>
+                    I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases.
+                    I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients.
+                    I am eager to be challenged in order to grow and further improve my IT skills.
+                    My greatest passion is in life is using my technical know-how to benefit other people and organisations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services"> 
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <h1 class="headings">VISUAL DESIGN</h1>
+                <p>Ranging from proportions, to typography, to grid systems, to color theory.
+                Can creating mood boards and type hierarchy and experimenting with web fonts and color palettes.</p>
+            </div>
+            <div class="box">
+                <h1 class="headings">UX/UI DESIGN</h1>
+                <p>Ranging from proportions, to typography, to grid systems, to color theory.
+                Can creating mood boards and type hierarchy and experimenting with web fonts and color palettes.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <h1 class="headings">CONTACT ME</h1>
+        <div class="bos">
+        <div class="add">
+            <h3>ADDRESS</h3>
+            <p>HaNoi, VietNam</p>
+        </div>
+        <div class="add">
+            <h3>PHONE</h3>
+            <p>0918347417</p>
+        </div>
+        <div class="add">
+            <h3>E-mail</h3>
+            <p>giangbh01@gmail.com</p>
+        </div>
+        </div>
+    </section>
+    
+</body>
+</html> 
